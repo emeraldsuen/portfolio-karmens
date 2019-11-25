@@ -1,0 +1,110 @@
+body {
+  background-color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Maison Neue Mono";
+  src: url("/fonts/Maison Neue Mono.otf") format("otf");
+}
+
+.main-container {
+  position: relative;
+}
+
+.home-container {
+  position: relative;
+  z-index: 0;
+  background-color: black;
+  width: 80%;
+  /* height: 100vh; */
+  display: flex;
+  margin: 0 auto;
+  /* margin-left: 5em; */
+  /* margin-right: 5em; */
+}
+
+.overlay-text {
+  z-index: -1;
+  opacity: 0.3;
+  position: sticky;
+}
+
+.overlay-text h1 {
+  font-size: 10em;
+  color: white;
+}
+
+/* .side-label {
+  width: 10%;
+  transform: rotate(-90deg);
+  color: white;
+  font-size: 5em;
+  position: relative;
+  top: 1em;
+  font-weight: bold;
+}
+
+.side-label p {
+  margin: 0;
+} */
+.big-type {
+  font-size: 6em;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.med-type {
+  /* font-family: "Maison Neue Mono", monospace; */
+  font-size: 2em;
+  color: #ffc83e;
+}
+
+.underline {
+  border-bottom: 3px solid #ffc83e;
+}
+
+.landing-page {
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.landing-page h1 {
+  font-weight: bold;
+}
+
+.intro-body {
+  max-width: 70%;
+  min-width: 60%;
+}
+
+.body-text {
+  color: white;
+  font-family: Maison Neue Mono, monospace;
+  font-size: 10pt;
+  line-height: 1.5em;
+}
+
+.yellow-text {
+  /* color: #ffc83e; */
+}
+
+.ordered-list {
+  color: white;
+  font-family: Maison Neue Mono, monospace;
+  font-size: 8pt;
+  line-height: 1.5em;
+}
+
+.project-content {
+  float: right;
+  width: 50%;
+}
+
+.product-content p {
+  color: white;
+  font-family: Maison Neue Mono, monospace;
+  font-size: 10pt;
+  line-height: 1.5em;
+}

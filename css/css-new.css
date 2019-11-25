@@ -1,0 +1,297 @@
+body {
+  /* background-color: black; */
+  /* font-family: 'Playfair Display', serif; */
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Maison Neue Mono";
+  src: url("/fonts/Maison Neue Mono.otf") format("otf");
+}
+
+.big-type {
+  font-size: 6em;
+  color: #00549c;
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: 700;
+  /* font-family: 'Playfair Display', serif; */
+}
+
+.med-type {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: normal;
+  /* font-family: "Maison Neue Mono", monospace; */
+  font-size: 2em;
+  color: #eea47f;
+}
+
+.body-text {
+  font-family: "Athiti", san-serif;
+}
+
+.underline {
+  border-bottom: 3px solid #eea47f;
+}
+
+/* HOME PAGE STYLING */
+.home-container {
+  /* position: relative; */
+  /* background-color: white; */
+  width: 80%;
+  /* height: 100vh; */
+  display: flex;
+  margin: 0 auto;
+  /* margin-left: 5em; */
+  /* margin-right: 5em; */
+  align-items: center;
+}
+
+.home-container h1 {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #00549c;
+  margin: 0;
+}
+
+.home-text-large {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #00549c;
+  margin: 0;
+}
+
+.home-text-med {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #eea47f;
+}
+
+.home-text-med a {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #eea47f;
+  text-decoration: none;
+}
+
+.home-left {
+  width: 50%;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.home-left h1 {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #00549c;
+  margin: 0;
+}
+
+.home-left h2 {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #eea47f;
+}
+
+.home-left img {
+  max-width: 100%;
+}
+
+.home-right {
+  width: 50%;
+  /* padding: 1em; */
+  padding-top: 1em;
+}
+
+.home-right h1 {
+  font-family: "Arimo", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.home-right img {
+  /* width: 80%; */
+  max-height: 80vh;
+}
+
+.work-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work-container {
+  display: flex;
+  align-items: center;
+}
+
+.work-description {
+  width: 30%;
+}
+
+.work-img {
+  width: 70%;
+  background-color: white;
+  opacity: 1;
+  animation: 0.7s opacity;
+  z-index: 0;
+}
+
+.work-img img {
+  width: 100%;
+}
+
+.work-img:hover img {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 758px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-left {
+    width: 100%;
+  }
+
+  .home-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-right img {
+    width: 50%;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+
+  .work-description {
+    width: 100%;
+  }
+
+  .work-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-img img {
+    width: 70%;
+  }
+}
+
+/* WORK PAGE STYLING */
+.page-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work-card {
+  display: flex;
+}
+
+.thumbnail {
+  width: 25%;
+  padding: 1em;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .word-card {
+    flex-direction: column;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+}
+
+/* PROJECT PAGE STYLING */
+.project-intro {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+
+.process-step {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.img-center {
+  text-align: center;
+}
+
+.proj-img {
+  max-width: 100%;
+  image-orientation: from-image;
+}
+
+.logo-left {
+  text-align: left;
+}
+
+.logo {
+  max-height: 250px;
+}
+
+.accordion {
+  background-color: #000;
+  color: #ffc83e;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.4s;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: "Maison Neue Mono", monospace;
+  /* font-size: 18pt; */
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  padding-bottom: 0;
+  color: #ffc83e;
+  font-weight: bold;
+}
+
+.accordion.active:after {
+  content: "\2212";
+  color: white;
+}
+
+.accordion-expand {
+  display: inline-block;
+  float: right;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.process-step .active, .accordion:hover {
+  background-color: #ffc83e;
+  color: white;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 1em 1em;
+  background-color: black;
+  display: none;
+  overflow: hidden;
+}

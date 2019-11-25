@@ -1,0 +1,144 @@
+.header {
+  background-color: #eee;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 2px 2px 2px #eee;
+}
+
+.header img {
+  display: inline-block;
+  padding: 1em;
+  width: 45px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.content {
+  padding: 16px;
+  z-index: -1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 102px;
+}
+
+.footer {
+  background-color: #eee;
+  height: 4em;
+  width: 100%;
+  text-align: center;
+}
+
+.nav {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  background: #28dde0;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100vh;
+  left: -100rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 20rem;
+  z-index: 2;
+}
+
+.nav.expanded {
+  left: 0;
+}
+
+.nav ul {
+  position: absolute;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  font-family: "Arimo", "Arial", sans-serif;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  height: 2rem;
+  left: 2rem;
+  position: fixed;
+  top: 2rem;
+  width: 3.6rem;
+  z-index: 3;
+}
+
+.nav-toggle:hover {
+  opacity: 0.65;
+}
+
+.nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /* changes color of hamburger */
+  background: black;
+  content: '';
+  height: 0.4rem;
+  width: 100%;
+}
+
+.nav-toggle .nav-toggle-bar {
+  margin-top: 0;
+}
+
+.nav-toggle .nav-toggle-bar::after {
+  margin-top: 0.8rem;
+}
+
+.nav-toggle .nav-toggle-bar::before {
+  margin-top: -0.8rem;
+}
+
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  background: white;
+  margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

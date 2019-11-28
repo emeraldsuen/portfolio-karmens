@@ -19,13 +19,13 @@
 }
 
 .content {
-  padding: 16px;
+  padding-top: 16px;
   z-index: -1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky+.content {
-  padding-top: 102px;
+  padding-top: 25em;
 }
 
 .footer {
@@ -33,6 +33,14 @@
   height: 4em;
   width: 100%;
   text-align: center;
+  font-family: "Athiti", san-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer a {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .nav {
@@ -41,7 +49,7 @@
   -ms-transition: left 0.5s ease;
   -o-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  background: #28dde0;
+  background: #eea47f;
   color: white;
   cursor: pointer;
   font-size: 2rem;
@@ -73,6 +81,9 @@
   font-family: "Arimo", "Arial", sans-serif;
   text-decoration: none;
   font-family: sans-serif;
+  color: #00549c;
+  font-size: 16pt;
+  font-weight: bold;
 }
 
 .nav-toggle {

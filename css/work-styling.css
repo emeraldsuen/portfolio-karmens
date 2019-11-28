@@ -9,12 +9,33 @@
   padding-right: 1em;
 }
 
+.work-left img {
+  max-width: 70%;
+  /* max-height: 100vh; */
+}
+
 .work-right img {
-  max-height: 80vh;
+  width: 70%;
+  /* max-height: 100vh; */
+}
+
+.accordion-container {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+}
+
+.reflection-container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .project-container {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-right img {
+    width: 75%;
   }
 }

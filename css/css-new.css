@@ -17,6 +17,7 @@ body {
   font-family: "Arimo", "Arial", sans-serif;
   font-weight: 700;
   /* font-family: 'Playfair Display', serif; */
+  text-shadow: 5px 5px #eea47f;
 }
 
 .med-type {
@@ -237,6 +238,12 @@ body {
 
 .img-center {
   text-align: center;
+  margin: 0 auto;
+}
+
+.img-shadow img {
+  border: 3px solid #00549c;
+  box-shadow: 5px 5px #eea47f;
 }
 
 .proj-img {
@@ -303,4 +310,8 @@ body {
   display: none;
   overflow: hidden;
   border: 1px solid white;
+}
+
+.panel img {
+  max-height: 400px;
 }

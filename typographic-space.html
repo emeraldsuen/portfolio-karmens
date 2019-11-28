@@ -4,16 +4,11 @@
 
 <head>
   <title>Karmen Suen | Portfolio</title>
-  <!-- <link rel="stylesheet" href="css/main.css"> -->
-  <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/css-new.css">
-  <link rel="stylesheet" href="css/transitions.css">
-  <link rel="stylesheet" href="css/work-styling.css">
+  <meta charset="utf-8" lang="en">
 
+  <link rel="stylesheet" href="css/main.css">
 
   <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Athiti&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -91,7 +86,6 @@
           <img src="img/mockups.png" class="proj-img" alt="mockups">
         </div>
       </div>
-
     </div>
 
     <!-- FINAL LAYOUTS -->
@@ -167,6 +161,10 @@
 
       <!-- </div> -->
     </div>
+
+    <div class="next-page">
+      <a href="dva.html">Check out my next project &#8594;</a>
+    </div>
   </div>
 
   <footer>
@@ -204,55 +202,6 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
   </script>
   <script src="js/main.js"></script>
-  <script>
-    // Get the H1 heading
-    var h1 = document.querySelector('h1');
-
-    // Get it's position in the viewport
-    var bounding = h1.getBoundingClientRect();
-
-    // Log the results
-    console.log(bounding);
-
-    var isInViewport = function(elem) {
-      var bounding = h1.getBoundingClientRect();
-      return (
-        // checks if the element is visible at all
-        bounding.bottom > 0
-      );
-    };
-
-    window.addEventListener('scroll', function(event) {
-      if (isInViewport(h1)) {
-        console.log('In the viewport!');
-      } else {
-        console.log('Not in the viewport... whomp whomp');
-      }
-    }, false);
-  </script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-
-    var captionText = document.getElementById("caption");
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-  </script>
 
 </body>
 
